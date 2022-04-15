@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>OPEC</title>
+  </head>
+  <body>
+    <!-- header section -->
+
+    <header class="header">
+      <!-- <div class="header__left-gradient"></div>
+      <div class="header__right-gradient"></div> -->
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <img
+            class="header-nav__logo__image"
+            src="./images/png/Logo.png"
+            alt=""
+          />
+        </div>
+        <div class="header-nav__box" id="navMenu">
+          <img
+            class="menu"
+            src="./images/png/Close icon.png"
+            alt=""
+            onclick="hideMenu()"
+          />
+          <ul class="header-nav__box__menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Projects</a></li>
+            <li><a href="#">About us</a></li>
+          </ul>
+
+          <div class="header-nav__box__btnbx">
+            <button class="header-nav__box__btnbx__btn">Contact us</button>
+          </div>
+        </div>
+        <img
+          class="menu ham"
+          src="./images/png/Menu icon.png"
+          alt=""
+          onclick="showMenu()"
+        />
+      </nav>
+
+      <div class="header-row">
+        <div class="header-row__col">
+          <h1 class="header-row__col__head">Build Your Awesome Website</h1>
+          <p class="header-row__col__body">
+            Opec studio is a digital studio that offers several services such as
+            UI/UX Design to developers, we will provide the best service for
+            those of you who use our services.
+          </p>
+
+          <button class="header-row__col__btn">Our Services</button>
+        </div>
+
+        <div class="header-row__col">
+          <img
+            class="header-row__col__img"
+            src="./images/png/Girl image.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Service Section -->
+
+    <section class="service">
+      <h2 class="service__head">The Service We Provide For You</h2>
+
+      <div class="service__row">
+        <div class="service__col">
+          <img class="service__image my" src="./images/svg/Icon 1.svg" alt="" />
+          <h3 class="service__title my">UI/UX Design</h3>
+          <p class="service__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="service__col">
+          <img class="service__image my" src="./images/svg/Icon 2.svg" alt="" />
+          <h3 class="service__title my">Graphic Design</h3>
+          <p class="service__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="service__col">
+          <img class="service__image my" src="./images/svg/Icon 3.svg" alt="" />
+          <h3 class="service__title my">Motion Design</h3>
+          <p class="service__body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+
+    <section class="portfolio">
+      <h2 class="portfolio__head">Our Awesome Portfolio</h2>
+
+      <div class="portfolio-tab__container">
+        <div class="portfolio-tab__btn__container">
+          <button>All</button>
+          <button>Websites</button>
+          <button>Apps</button>
+          <button>Newsletters</button>
+        </div>
+
+        <div class="portfolio-tab__panel">Tab 1: content</div>
+        <div class="portfolio-tab__panel">Tab 2: content</div>
+        <div class="portfolio-tab__panel">Tab 3: content</div>
+        <div class="portfolio-tab__panel">Tab 4: content</div>
+      </div>
+    </section>
+
+    <!-- testimonial section -->
+
+    <section class="client">
+      <div class="client__header">
+        <h2 class="client__head">What Our Client Says</h2>
+        <div class="client__icon">
+          <i class="fa-solid fa-circle-chevron-left"></i>
+          <i class="fa-solid fa-circle-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="client__row">
+        <div class="client__col">
+          <div class="client__box">
+            <img src="./images/png/Testimonial image.png" alt="" />
+          </div>
+
+          <div class="client__review">
+            <div class="client__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h4>Great Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua..
+            </p>
+
+            <div class="client__profile">
+              <div class="client__image">
+                <img src="./images/png/Profile 1.png" alt="" />
+              </div>
+
+              <div class="client__name">
+                <h3>Foster Richmond</h3>
+                <p>Product Manager DigiTeck</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="client__col col-2">
+          <h4>Great Design</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua..
+          </p>
+
+          <div class="client__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div class="client__profile">
+            <div class="client__image">
+              <img src="./images/png/Profile 2.png" alt="" />
+            </div>
+
+            <div class="client__name">
+              <h3>Foster Richmond</h3>
+              <p>Product Manager DigiTeck</p>
+            </div>
+          </div>
+        </div>
+        <div class="client__col col-2">
+          <h4>Great Design</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua..
+          </p>
+
+          <div class="client__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div class="client__profile">
+            <div class="client__image">
+              <img src="./images/png/Profile 3.png" alt="" />
+            </div>
+
+            <div class="client__name">
+              <h3>Foster Richmond</h3>
+              <p>Product Manager DigiTeck</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="footer">
+      <div class="footer-header">
+        <div class="footer-header__logo">
+          <img
+            class="footer-header__image"
+            src="./images/png/Logo.png"
+            alt=""
+          />
+        </div>
+        <h2 class="footer-header__head">Contact Us</h2>
+      </div>
+
+      <address class="footer-row">
+        <div class="footer-row__col1">
+          <div class="footer-row__col1__col">
+            <h5 class="footer-row__col1__col__head">Our Address</h5>
+            <p class="footer-row__col1__col__body">
+              246 4th Avenue New York, NY 10001 United States
+            </p>
+          </div>
+
+          <div class="footer-row__col1__col">
+            <h5 class="footer-row__col1__col__head">Our Contacts</h5>
+            <p class="footer-row__col1__col__body">info@opec.com</p>
+            <p class="footer-row__col1__col__body">548-548-8589</p>
+          </div>
+        </div>
+
+        <div class="footer-row__col2">
+          <form action="/" method="POST">
+            <div>
+              <input type="text" id="name" placeholder="Name" />
+              <p id="nameErr">Please enter a valid Name</p>
+            </div>
+            <div>
+              <input type="text" id="email" placeholder="Email" />
+              <input type="text" id="contact" placeholder="Contact Number" />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" id="submit" class="footer-row__col2__btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </address>
+
+      <div class="footer-links">
+        <img
+          src="./images/png/facebook.png"
+          alt=""
+          class="footer-links__twitter"
+        />
+        <img
+          src="./images/png/Twitter.png"
+          alt=""
+          class="footer-links__twitter"
+        />
+        <img
+          src="./images/png/Instagram.png"
+          alt=""
+          class="footer-links__twitter"
+        />
+
+        <p>- follow us</p>
+      </div>
+
+      <div class="footer-copyright">
+        <ul class="footer-copyright__item">
+          <li><a href="#"> Privacy Policy</a></li>
+          <li><a href="#"> Terms & Conditions</a></li>
+          <li><a href="#">© 2022 Opec, All Rights Reserved</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
