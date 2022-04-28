@@ -1356,6 +1356,17 @@ body {
           align-items: flex-end;
 }
 
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
 .footer #nameErr,
 .footer #emailErr,
 .footer #phoneErr {
@@ -1491,6 +1502,9 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: unset;
+  }
+  .footer__flex {
+    width: 100%;
   }
   .footer__btn {
     margin: 30.5px 0 0 0;
