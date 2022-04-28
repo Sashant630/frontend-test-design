@@ -18,60 +18,83 @@
     <!-- header section -->
 
     <header class="header">
-      <!-- <div class="header__left-gradient"></div>
-      <div class="header__right-gradient"></div> -->
-      <nav class="header-nav">
-        <div class="header-nav__logo">
-          <img
-            class="header-nav__logo__image"
-            src="./images/png/Logo.png"
-            alt=""
-          />
-        </div>
-        <div class="header-nav__box" id="navMenu">
-          <img
-            class="menu"
-            src="./images/png/Close icon.png"
-            alt=""
-            onclick="hideMenu()"
-          />
-          <ul class="header-nav__box__menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Projects</a></li>
-            <li><a href="#">About us</a></li>
-          </ul>
+      <!-- <div class="header__gradient header__gradient--1"></div>
+      <div class="header__gradient header__gradient--2"></div> -->
+      <img class="header__img" src="./images/png/Bg graphics 2.png" alt="" />
 
-          <div class="header-nav__box__btnbx">
-            <button class="header-nav__box__btnbx__btn">Contact us</button>
-          </div>
+      <!-- mobile device navbar -->
+      <div class="header__navHide">
+        <div class="header__logo">
+          <img class="header__logo--img" src="./images/png/Logo.png" alt="" />
         </div>
         <img
-          class="menu ham"
+          class="menuHide"
           src="./images/png/Menu icon.png"
           alt=""
           onclick="showMenu()"
         />
+      </div>
+
+      <!-- Desktop navbar -->
+      <nav class="header__nav" id="navMenu">
+        <img
+          class="menu close"
+          src="./images/png/Close icon.png"
+          alt=""
+          onclick="hideMenu()"
+        />
+        <div class="header__logo desktop">
+          <img class="header__logo--img" src="./images/png/Logo.png" alt="" />
+        </div>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Our Projects</a></li>
+          <li><a href="#">About us</a></li>
+        </ul>
+
+        <div class="header__btnBx navBtn">
+          <button class="header__btnBx--btn">Contact us</button>
+        </div>
       </nav>
 
-      <div class="header-row">
-        <div class="header-row__col">
-          <h1 class="header-row__col__head">Build Your Awesome Website</h1>
-          <p class="header-row__col__body">
+      <div class="header__row">
+        <div class="header__col">
+          <h1 class="header__col--head">Build Your Awesome Website</h1>
+          <p class="header__col--body">
             Opec studio is a digital studio that offers several services such as
             UI/UX Design to developers, we will provide the best service for
             those of you who use our services.
           </p>
 
-          <button class="header-row__col__btn">Our Services</button>
+          <div class="header__btnBx header__btnBx--heroBtn">
+            <button class="header__btnBx">Our Services</button>
+          </div>
         </div>
 
-        <div class="header-row__col">
+        <div class="header__col col-2">
           <img
-            class="header-row__col__img"
-            src="./images/png/Girl image.png"
+            class="header__graphics header__graphics--1"
+            src="./images/png/Bg graphics 1.png"
             alt=""
           />
+          <img
+            class="header__graphics header__graphics--2"
+            src="./images/png/Bg graphics 2.png"
+            alt=""
+          />
+          <img
+            class="header__graphics header__graphics--3"
+            src="./images/png/Bg graphics 3.png"
+            alt=""
+          />
+          <img
+            class="header__graphics header__graphics--4"
+            src="./images/png/Bg graphics 4.png"
+            alt=""
+          />
+          <img class="col-2--img" src="./images/png/Girl image.png" alt="" />
         </div>
       </div>
     </header>
@@ -79,28 +102,34 @@
     <!-- Service Section -->
 
     <section class="service">
+      <img class="service__img" src="./images/png/Bg graphics 6.png" alt="" />
+      <img
+        class="service__img--1"
+        src="./images/png/Bg graphics 6.png"
+        alt=""
+      />
       <h2 class="service__head">The Service We Provide For You</h2>
 
       <div class="service__row">
         <div class="service__col">
-          <img class="service__image my" src="./images/svg/Icon 1.svg" alt="" />
-          <h3 class="service__title my">UI/UX Design</h3>
+          <img class="service__image" src="./images/svg/Icon 1.svg" alt="" />
+          <h3 class="service__title">UI/UX Design</h3>
           <p class="service__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
         <div class="service__col">
-          <img class="service__image my" src="./images/svg/Icon 2.svg" alt="" />
-          <h3 class="service__title my">Graphic Design</h3>
+          <img class="service__image" src="./images/svg/Icon 2.svg" alt="" />
+          <h3 class="service__title">Graphic Design</h3>
           <p class="service__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
 
         <div class="service__col">
-          <img class="service__image my" src="./images/svg/Icon 3.svg" alt="" />
-          <h3 class="service__title my">Motion Design</h3>
+          <img class="service__image" src="./images/svg/Icon 3.svg" alt="" />
+          <h3 class="service__title">Motion Design</h3>
           <p class="service__body">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
@@ -111,120 +140,305 @@
     <!-- Portfolio section -->
 
     <section class="portfolio">
+      <img class="portfolio__img" src="./images/png/Bg graphics 4.png" alt="" />
+      <img
+        class="portfolio__img--1"
+        src="./images/png/Bg graphics 1.png"
+        alt=""
+      />
       <h2 class="portfolio__head">Our Awesome Portfolio</h2>
 
-      <div class="portfolio-tab__container">
-        <div class="portfolio-tab__btn__container">
-          <button>All</button>
-          <button>Websites</button>
-          <button>Apps</button>
-          <button>Newsletters</button>
+      <div class="portfolio__container">
+        <div class="portfolio__tab">
+          <button
+            class="tablinks"
+            onclick="tabs(event, 'All')"
+            id="defaultOpen"
+          >
+            All
+          </button>
+          <button class="tablinks" onclick="tabs(event, 'Websites')">
+            Websites
+          </button>
+          <button class="tablinks" onclick="tabs(event, 'Apps')">Apps</button>
+          <button class="tablinks" onclick="tabs(event, 'Newsletters')">
+            Newsletters
+          </button>
         </div>
 
-        <div class="portfolio-tab__panel">Tab 1: content</div>
-        <div class="portfolio-tab__panel">Tab 2: content</div>
-        <div class="portfolio-tab__panel">Tab 3: content</div>
-        <div class="portfolio-tab__panel">Tab 4: content</div>
+        <div id="All" class="tabcontent">
+          <div class="portfolio__row">
+            <div class="portfolio__col portfolio__col--1">
+              <div class="portfolio__image">
+                <img
+                  class="portfolio__image--img"
+                  src="./images/png/Portfolio image 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="portfolio__content">
+                <h3 class="portfolio__content--head">ConceptZilla</h3>
+                <p class="portfolio__content--body">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="portfolio__btn">View more</button>
+              </div>
+            </div>
+            <div class="portfolio__col portfolio__col--2">
+              <div class="portfolio__bx">
+                <div class="portfolio__innerCol portfolio__innerCol--left">
+                  <h4>Videopad</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="portfolio__innerCol portfolio__innerCol--right">
+                  <div class="portfolio__rightImg">
+                    <img src="./images/png/Portfolio image 2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__bx">
+                <div class="portfolio__innerCol portfolio__innerCol--left">
+                  <h4>Panto</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="portfolio__innerCol portfolio__innerCol--right">
+                  <div class="portfolio__rightImg">
+                    <img src="./images/png/Portfolio image 3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio__bx">
+                <div class="portfolio__innerCol portfolio__innerCol--left">
+                  <h4>DigiTeck</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="portfolio__innerCol portfolio__innerCol--right">
+                  <div class="portfolio__rightImg">
+                    <img src="./images/png/Portfolio image 4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Websites" class="tabcontent">
+          <div class="portfolio__bx">
+            <div class="portfolio__innerCol portfolio__innerCol--left">
+              <h4>Panto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="portfolio__innerCol portfolio__innerCol--right">
+              <div class="portfolio__rightImg">
+                <img src="./images/png/Portfolio image 3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Apps" class="tabcontent">
+          <div class="portfolio__bx">
+            <div class="portfolio__innerCol portfolio__innerCol--left">
+              <h4>Videopad</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="portfolio__innerCol portfolio__innerCol--right">
+              <div class="portfolio__rightImg">
+                <img src="./images/png/Portfolio image 2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="Newsletters" class="tabcontent">
+          <div class="portfolio__bx">
+            <div class="portfolio__innerCol portfolio__innerCol--left">
+              <h4>DigiTeck</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="portfolio__innerCol portfolio__innerCol--right">
+              <div class="portfolio__rightImg">
+                <img src="./images/png/Portfolio image 4.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- testimonial section -->
 
     <section class="client">
+      <img class="client__img" src="./images/png/Bg graphics 2.png" alt="" />
       <div class="client__header">
-        <h2 class="client__head">What Our Client Says</h2>
-        <div class="client__icon">
-          <i class="fa-solid fa-circle-chevron-left"></i>
-          <i class="fa-solid fa-circle-chevron-right"></i>
+        <h2 class="client__header--head">What Our Client Says</h2>
+        <div class="client__header--icon">
+          <div class="fa">
+            <i class="fa-solid fa-chevron-left" onclick="prev()"></i>
+          </div>
+          <div class="fa">
+            <i class="fa-solid fa-chevron-right" onclick="next()"></i>
+          </div>
         </div>
       </div>
 
-      <div class="client__row">
-        <div class="client__col">
-          <div class="client__box">
-            <img src="./images/png/Testimonial image.png" alt="" />
-          </div>
-
-          <div class="client__review">
-            <div class="client__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
+      <div class="client__wrap">
+        <div class="client__row" id="client__row">
+          <div class="client__col client__col--1">
+            <div class="client__box">
+              <img src="./images/png/Testimonial image.png" alt="" />
             </div>
 
-            <h4>Great Design</h4>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua..
-            </p>
-
-            <div class="client__profile">
-              <div class="client__image">
-                <img src="./images/png/Profile 1.png" alt="" />
+            <div class="client__review">
+              <div class="client__rating prating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
               </div>
 
-              <div class="client__name">
-                <h3>Foster Richmond</h3>
-                <p>Product Manager DigiTeck</p>
+              <h4 class="client__head padding">Great Design!</h4>
+
+              <p class="client__body pb">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              </p>
+
+              <div class="client__profile align-left">
+                <div class="client__image">
+                  <img src="./images/png/Profile 1.png" alt="" />
+                </div>
+
+                <div class="client__name">
+                  <h3>Foster Richmond</h3>
+                  <p>Product Manager DigiTeck</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="client__col col-2">
-          <h4>Great Design</h4>
+          <div class="client__col client__col--2">
+            <div class="client__details">
+              <h4 class="client__head">Great Design</h4>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua..
-          </p>
+              <p class="client__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              </p>
 
-          <div class="client__rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+              <div class="client__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="client__profile">
+                <div class="client__image">
+                  <img src="./images/png/Profile 2.png" alt="" />
+                </div>
+
+                <div class="client__name">
+                  <h3>Eliza Ryan</h3>
+                  <p>Product Manager Panto</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="client__profile">
-            <div class="client__image">
-              <img src="./images/png/Profile 2.png" alt="" />
-            </div>
+          <div class="client__col client__col--3">
+            <div class="client__details">
+              <h4 class="client__head">Great Design</h4>
 
-            <div class="client__name">
-              <h3>Foster Richmond</h3>
-              <p>Product Manager DigiTeck</p>
+              <p class="client__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              </p>
+
+              <div class="client__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="client__profile">
+                <div class="client__image">
+                  <img src="./images/png/Profile 3.png" alt="" />
+                </div>
+
+                <div class="client__name">
+                  <h3>Gary Stanton</h3>
+                  <p>Product Manager Panto</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="client__col col-2">
-          <h4>Great Design</h4>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua..
-          </p>
+          <div class="client__col client__col--2">
+            <div class="client__details">
+              <h4 class="client__head">Great Design</h4>
 
-          <div class="client__rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
+              <p class="client__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              </p>
+
+              <div class="client__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="client__profile">
+                <div class="client__image">
+                  <img src="./images/png/Profile 2.png" alt="" />
+                </div>
+
+                <div class="client__name">
+                  <h3>Eliza Ryan</h3>
+                  <p>Product Manager Panto</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="client__profile">
-            <div class="client__image">
-              <img src="./images/png/Profile 3.png" alt="" />
-            </div>
+          <div class="client__col client__col--3">
+            <div class="client__details">
+              <h4 class="client__head">Great Design</h4>
 
-            <div class="client__name">
-              <h3>Foster Richmond</h3>
-              <p>Product Manager DigiTeck</p>
+              <p class="client__body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua..
+              </p>
+
+              <div class="client__rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <div class="client__profile">
+                <div class="client__image">
+                  <img src="./images/png/Profile 3.png" alt="" />
+                </div>
+
+                <div class="client__name">
+                  <h3>Gary Stanton</h3>
+                  <p>Product Manager Panto</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -234,51 +448,78 @@
     <!-- Footer section -->
 
     <footer class="footer">
-      <div class="footer-header">
-        <div class="footer-header__logo">
-          <img
-            class="footer-header__image"
-            src="./images/png/Logo.png"
-            alt=""
-          />
-        </div>
-        <h2 class="footer-header__head">Contact Us</h2>
-      </div>
-
-      <address class="footer-row">
-        <div class="footer-row__col1">
-          <div class="footer-row__col1__col">
-            <h5 class="footer-row__col1__col__head">Our Address</h5>
-            <p class="footer-row__col1__col__body">
-              246 4th Avenue New York, NY 10001 United States
-            </p>
+      <address class="footer__row">
+        <div class="footer__col-1">
+          <div class="footer__logo">
+            <img class="footer__logo--img" src="./images/png/Logo.png" alt="" />
           </div>
 
-          <div class="footer-row__col1__col">
-            <h5 class="footer-row__col1__col__head">Our Contacts</h5>
-            <p class="footer-row__col1__col__body">info@opec.com</p>
-            <p class="footer-row__col1__col__body">548-548-8589</p>
+          <div class="footer__rowBx">
+            <div class="footer__col">
+              <h5 class="footer__head">Our Address</h5>
+              <p class="footer__body">
+                246 4th Avenue New York, NY 10001 United States
+              </p>
+            </div>
+
+            <div class="footer__col">
+              <h5 class="footer__head">Our Contacts</h5>
+              <p class="footer__body footer__body--margin">info@opec.com</p>
+              <p class="footer__body footer__body--padding">548-548-8589</p>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <div class="footer__social">
+              <img
+                src="./images/png/facebook.png"
+                alt=""
+                class="footer__social--fb"
+              />
+            </div>
+            <div class="footer__social">
+              <img
+                src="./images/png/Twitter.png"
+                alt=""
+                class="footer__social--tw"
+              />
+            </div>
+            <div class="footer__social">
+              <img
+                src="./images/png/Instagram.png"
+                alt=""
+                class="footer__social--ig"
+              />
+            </div>
+
+            <p>- follow us</p>
           </div>
         </div>
 
-        <div class="footer-row__col2">
-          <form action="/" method="POST">
+        <div class="footer__col-2">
+          <div class="footer__header">
+            <h2 class="footer__header--head">Contact Us</h2>
+          </div>
+          <form action="/" method="POST" id="myForm">
             <div>
               <input type="text" id="name" placeholder="Name" />
               <p id="nameErr">Please enter a valid Name</p>
             </div>
-            <div>
+            <div class="footer__bx">
               <input type="text" id="email" placeholder="Email" />
+              <p id="emailErr">Please enter a valid Email</p>
               <input type="text" id="contact" placeholder="Contact Number" />
+              <p id="phoneErr">Please enter a valid Phone Number</p>
             </div>
-            <div>
+            <div class="footer__bx">
               <textarea
                 name="message"
                 id="message"
                 rows="5"
                 placeholder="Message"
               ></textarea>
-              <button type="submit" id="submit" class="footer-row__col2__btn">
+              <!-- <p id="messageErr">Please enter a valid message</p> -->
+              <button type="submit" id="submit" class="footer__btn">
                 Send Message
               </button>
             </div>
@@ -286,35 +527,21 @@
         </div>
       </address>
 
-      <div class="footer-links">
-        <img
-          src="./images/png/facebook.png"
-          alt=""
-          class="footer-links__twitter"
-        />
-        <img
-          src="./images/png/Twitter.png"
-          alt=""
-          class="footer-links__twitter"
-        />
-        <img
-          src="./images/png/Instagram.png"
-          alt=""
-          class="footer-links__twitter"
-        />
-
-        <p>- follow us</p>
-      </div>
-
-      <div class="footer-copyright">
-        <ul class="footer-copyright__item">
-          <li><a href="#"> Privacy Policy</a></li>
-          <li><a href="#"> Terms & Conditions</a></li>
-          <li><a href="#">© 2022 Opec, All Rights Reserved</a></li>
+      <div class="footer__copyright">
+        <ul class="footer__item">
+          <div class="footer__li">
+            <li><a href="#"> Privacy Policy</a></li>
+            <li><a href="#"> Terms & Conditions</a></li>
+          </div>
+          <div class="footer__li">
+            <li><a href="#">© 2022 Opec, All Rights Reserved</a></li>
+          </div>
         </ul>
       </div>
     </footer>
 
     <script src="main.js"></script>
+
+    <section></section>
   </body>
 </html>
