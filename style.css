@@ -291,7 +291,7 @@ body {
     width: 285px;
     top: 0;
     left: -285px;
-    z-index: 2;
+    z-index: 100;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
