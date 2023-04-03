@@ -108,3 +108,31 @@ contact.addEventListener("input", (e) => {
 //     messageErr.style.display = "block";
 //   }
 // });
+
+
+const contactForm = document.querySelector('#myForm');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(contactForm);
+
+  fetch('https://formsubmit.co/ajax/bitlance.tech01@gmail.com', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(Object.fromEntries(formData))
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    alert('Thank you for your message. We will get back to you soon!');
+    contactForm.reset();
+  })
+  .catch(error => {
+    alert('Sorry, there was a problem submitting your message. Please try again later.');
+  });
+});

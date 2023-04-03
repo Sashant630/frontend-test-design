@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #19191b;
 }
@@ -80,8 +84,7 @@ body {
 }
 
 .header__logo {
-  width: 132px;
-  height: 40px;
+  width: 200px;
 }
 
 .header__logo--img {
@@ -264,7 +267,8 @@ body {
   }
   .header__logo {
     width: 114px;
-    height: 35px;
+    position: relative;
+    top: 3px;
   }
   .header .menuHide {
     width: 24px;
@@ -287,11 +291,11 @@ body {
             align-items: flex-start;
     position: fixed;
     background: #19191b;
-    height: 150%;
+    height: 100%;
     width: 285px;
     top: 0;
     left: -285px;
-    z-index: 200;
+    z-index: 2;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
@@ -307,6 +311,8 @@ body {
   }
   .header .desktop {
     padding: 40px 0 57px 23px;
+    position: relative;
+    top: 6px;
   }
   .header .menu {
     position: absolute;
@@ -1139,8 +1145,10 @@ body {
 }
 
 .footer__logo {
-  width: 132px;
+  width: 200px;
   height: 40px;
+  position: relative;
+  top: 6px;
   margin: 0 0 47px 0;
 }
 

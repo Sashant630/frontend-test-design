@@ -14,6 +14,10 @@ $font-rubik: "Rubik", sans-serif;
   margin-right: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #19191b;
 }
@@ -87,8 +91,7 @@ body {
   }
 
   &__logo {
-    width: 132px;
-    height: 40px;
+    width: 200px;
 
     &--img {
       width: 100%;
@@ -250,7 +253,8 @@ body {
 
     &__logo {
       width: 114px;
-      height: 35px;
+      position: relative;
+      top: 3px;
     }
 
     .menuHide {
@@ -289,6 +293,8 @@ body {
 
     .desktop {
       padding: 40px 0 57px 23px;
+      position: relative;
+      top: 6px;
     }
 
     .menu {
@@ -1057,8 +1063,10 @@ body {
   }
 
   &__logo {
-    width: 132px;
+    width: 200px;
     height: 40px;
+    position: relative;
+    top: 6px;
     margin: 0 0 47px 0;
     &--img {
       width: 100%;

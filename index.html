@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>OPEC</title>
+    <title>BITLANCE | Home</title>
   </head>
   <body>
     <!-- header section -->
@@ -25,7 +25,7 @@
       <!-- mobile device navbar -->
       <div class="header__navHide">
         <div class="header__logo">
-          <img class="header__logo--img" src="./images/png/Logo.png" alt="" />
+          <img class="header__logo--img" src="./images/png/BITLANCE.png" alt="" />
         </div>
         <img
           class="menuHide"
@@ -44,14 +44,14 @@
           onclick="hideMenu()"
         />
         <div class="header__logo desktop">
-          <img class="header__logo--img" src="./images/png/Logo.png" alt="" />
+          <img class="header__logo--img" src="./images/png/BITLANCE.png" alt="" />
         </div>
 
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Our Projects</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#project">Our Projects</a></li>
+          <li><a href="#about">About us</a></li>
         </ul>
 
         <div class="header__btnBx navBtn">
@@ -63,7 +63,7 @@
         <div class="header__col">
           <h1 class="header__col--head">Build Your Awesome Website</h1>
           <p class="header__col--body">
-            Opec studio is a digital studio that offers several services such as
+            Bitlance studio is a digital studio that offers several services such as
             UI/UX Design to developers, we will provide the best service for
             those of you who use our services.
           </p>
@@ -101,7 +101,7 @@
 
     <!-- Service Section -->
 
-    <section class="service">
+    <section class="service" id="service">
       <img class="service__img" src="./images/png/Bg graphics 6.png" alt="" />
       <img
         class="service__img--1"
@@ -139,7 +139,7 @@
 
     <!-- Portfolio section -->
 
-    <section class="portfolio">
+    <section class="portfolio" id="project">
       <img class="portfolio__img" src="./images/png/Bg graphics 4.png" alt="" />
       <img
         class="portfolio__img--1"
@@ -272,7 +272,7 @@
 
     <!-- testimonial section -->
 
-    <section class="client">
+    <section class="client" id="about">
       <img class="client__img" src="./images/png/Bg graphics 2.png" alt="" />
       <div class="client__header">
         <h2 class="client__header--head">What Our Client Says</h2>
@@ -451,7 +451,7 @@
       <address class="footer__row">
         <div class="footer__col-1">
           <div class="footer__logo">
-            <img class="footer__logo--img" src="./images/png/Logo.png" alt="" />
+            <img class="footer__logo--img" src="./images/png/BITLANCE.png" alt="" />
           </div>
 
           <div class="footer__rowBx">
@@ -464,7 +464,7 @@
 
             <div class="footer__col">
               <h5 class="footer__head">Our Contacts</h5>
-              <p class="footer__body footer__body--margin">info@opec.com</p>
+              <p class="footer__body footer__body--margin">contact@bitlance.tech</p>
               <p class="footer__body footer__body--padding">548-548-8589</p>
             </div>
           </div>
@@ -500,14 +500,14 @@
           <div class="footer__header">
             <h2 class="footer__header--head">Contact Us</h2>
           </div>
-          <form action="/" method="POST" id="myForm">
+          <form id="myForm">
             <div>
-              <input type="text" id="name" placeholder="Name" />
+              <input type="text" id="name" placeholder="Name" required/>
               <p id="nameErr">Please enter a valid Name</p>
             </div>
             <div class="footer__bx">
               <div class="footer__flex">
-                <input type="text" id="email" placeholder="Email" />
+                <input type="text" id="email" placeholder="Email" required/>
                 <p id="emailErr">Please enter a valid Email</p>
               </div>
 
@@ -522,6 +522,7 @@
                 id="message"
                 rows="5"
                 placeholder="Message"
+                required
               ></textarea>
               <!-- <p id="messageErr">Please enter a valid message</p> -->
               <button type="submit" id="submit" class="footer__btn">
@@ -539,7 +540,7 @@
             <li><a href="#"> Terms & Conditions</a></li>
           </div>
           <div class="footer__li">
-            <li><a href="#">© 2022 Opec, All Rights Reserved</a></li>
+            <li><a href="#">© 2023 Bitlance, All Rights Reserved</a></li>
           </div>
         </ul>
       </div>
